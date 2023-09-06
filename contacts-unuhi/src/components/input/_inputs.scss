@@ -1,0 +1,46 @@
+.entry-area {
+  position: relative;
+  height: 5rem;
+  //height: 80px;
+  line-height: 5rem;
+}
+
+.new-input {
+  position: absolute;
+  width: 100%;
+  outline: none;
+  font-size: 2em;
+  padding: 0 1.8rem;
+  line-height: 5rem;
+  border-radius: 10px;
+  border: 2px solid #b7b9b9;
+  background: transparent;
+  transition: 0.1s ease;
+  z-index: 1111;
+}
+
+.label-line {
+  position: absolute;
+  font-size: 1.6em;
+  color: #b7b9b9;
+  padding: 0 1.5rem;
+  margin: 0 1.25rem;
+  background-color: #fff;
+  transition: 0.2s ease;
+}
+
+input:focus,
+input:valid {
+  color: #9dff5c;
+  border: 4px solid #9dff5c;
+}
+
+input:focus + .label-line,
+input:valid + .label-line {
+  color: #9dff5c;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding: 0 0.75rem;
+  transform: translate(-1rem, -1rem) scale(0.88);
+  z-index: 1111;
+}

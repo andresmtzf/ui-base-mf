@@ -1,3 +1,5 @@
+import { Input } from './input/Input'
+
 export const Contactos = () => {
   return (
     <>
@@ -28,6 +30,9 @@ export const Contactos = () => {
         </div>
         <div className='card-body'>
           <h5 className='card-title'>Formulario aquí</h5>
+          <div>
+            <Input></Input>
+          </div>
         </div>
       </div>
     </>
